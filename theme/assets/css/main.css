@@ -90,13 +90,12 @@ a:after {
 }
 
 .navbar-inverse {
-	padding-bottom: 70px;
-	padding-top: 70px;
-}
-
-.navbar-inverse {
-	background-color: #1abc9c;
+  background-color: #1abc9c;
 	border-color: #16a085;
+	padding-bottom: 20px;
+	padding-top: 20px;
+  position: fixed;
+  width: 100vw;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -134,7 +133,7 @@ a:after {
 }
 
 .pt {
-	padding-top: 50px;
+	padding-top: 20px;
 	padding-bottom: 50px;
 }
 
@@ -162,6 +161,9 @@ a:after {
 
 #footer p {
 	color: white;
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 200;
 }
 
 #footer h4 {
@@ -249,12 +251,20 @@ bt {
 
 
 /** My own styles **/
+
+.aboutContainer {
+  padding-top:80px;
+}
+
+.col-lg-4 {
+  transform: scale(0.9);
+}
 .col-lg-4 img {
   border: 1px solid black;
 }
 
 .col-lg-4 img:hover {
-  opacity: 0.2;
+  opacity: 0.5;
 }
 
 .col-lg-4 p {
@@ -264,20 +274,92 @@ bt {
 
 .col-lg-4 .project-desc {
   text-align: left;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .col-lg-4 .project-links {
+  font-size: 16px;
   padding-top: 5px;
 }
 
 .col-lg-4 .project-title {
   font-weight: 600;
-  font-size:20px;
+  font-size:22px;
   margin-bottom: 5px;
+}
+
+.contactContainer {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactDetailedInfo h2 {
+  color: white;
+}
+
+.contactLinks a {
+  margin-left: 10px;
+}
+
+.contactLinks a:hover {
+  opacity: 0.8;
+}
+
+.icon {
+  border-radius: 15px;
+}
+
+.navLink:hover {
+  cursor: pointer;
 }
 
 .resume {
   font-size: 20px;
   font-weight: 600;
+}
+
+
+
+.skillsContainer {
+  width: 60%;
+  height: 500px;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skillsSection {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.square {
+  width: 25%;
+  height: 33.33%;
+  color: #1abc9c;
+  background: rgba(255, 255, 255, 0.8);
+
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+}
+
+.square:nth-child(4n+1) {
+  border-left: 1px solid grey;
+}
+
+.square:nth-child(-n + 4) {
+  border-top: 1px solid grey;
 }

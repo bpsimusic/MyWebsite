@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
 
-    <title>STANLEY - Free Bootstrap Theme </title>
-
+    <title>Brian Tsai | Portfolio </title>
+    <link rel="shortcut icon" type="image/png" href="./assets/img/favicon.png">
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
 
@@ -43,10 +43,10 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="work.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a class="navLink about">About</a></li>
+            <li><a class="navLink work">Work</a></li>
+            <li><a class="navLink skills">Skills</a></li>
+            <li><a class="navLink contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -54,14 +54,14 @@
 
 	<!-- +++++ Welcome Section +++++ -->
 	<div id="ww">
-	    <div class="container">
+	    <div class="aboutContainer">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 centered">
             <img src="assets/img/resumepic.jpg" alt="Brian" class="round-profile-pic">
 					<h1>Hi, I'm Brian!</h1>
 					<p>I'm a fullstack web developer specializing in frontend. I love to create
             websites and I'm fascinated with artwork/technology inspired by Human-Computer Interaction.
-            In my spare time I like to sing, workout, play chess, and play tennis. Contact me at bpsimusic@gmail.com.</p>
+            In my spare time I like to sing, workout, play chess, and play tennis. Contact me at <b>bpsimusic@gmail.com<b>.</p>
             <a href="./assets/Brian_Tsai_resume.pdf" download class="resume">Download Résumé</a>
 				</div><!-- /col-lg-8 -->
 			</div><!-- /row -->
@@ -71,7 +71,7 @@
 
 	<!-- +++++ Projects Section +++++ -->
 
-	<div class="container pt">
+	<div class="container pt workContainer">
 		<div class="row mt centered">
 			<div class="col-lg-4">
         <p class="project-title">Musician Hub</p>
@@ -107,45 +107,72 @@
 			</div>
 		</div><!-- /row -->
 	</div><!-- /container -->
+  <div class="skillsSection">
+    <h3>I am skilled in the following technologies, and learning more: </h3>
+    <div class="container pt skillsContainer">
+
+        <div class="square">
+          <i class="devicon-javascript-plain"></i>
+        </div>
+        <div class="square">
+          <i class="devicon-react-original-wordmark"></i>
+        </div>
+        <div class="square">
+          <i class="devicon-nodejs-plain-wordmark"></i>
+        </div>
+        <div class="square">
+          <i class="devicon-ruby-plain-wordmark"></i>
+        </div>
+        <div class="square">
+          <i class="devicon-rails-plain-wordmark"></i>
+        </div>
+        <div class="square">
+          <i class="devicon-java-plain-wordmark"></i>
+        </div>
+        <div class="square">
+          <i class="devicon-postgresql-plain-wordmark"></i>
+        </div>
+        <div class="square">
+          <i class="devicon-jquery-plain-wordmark"></i>
+        </div>
+        <div class="square">
+          <i class="devicon-html5-plain-wordmark"></i>
+        </div>
+        <div class="square">
+          <i class="devicon-css3-plain-wordmark"></i>
+        </div>
+        <div class="square">
+          <i class="devicon-git-plain-wordmark"></i>
+        </div>
+        <div class="square">
+
+        </div>
+
+    </div>
+  </div>
 
 
 	<!-- +++++ Footer Section +++++ -->
 
 	<div id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4">
-					<h4>My Bunker</h4>
-					<p>
-						Some Address 987,<br/>
-						+34 9054 5455, <br/>
-						Madrid, Spain.
-					</p>
-				</div><!-- /col-lg-4 -->
+		<div class="contactContainer">
+          <div class="contactLinks">
+  					<a href="https://github.com/bpsimusic"><img src="./assets/img/github.png" alt="Github" class="icon"></a>
+  					<a href="https://www.linkedin.com/in/briantsai1"><img src="./assets/img/linkedin.png" alt="LinkedIn" class="icon"></a>
+          </div>
+          <div class=contactDetailedInfo>
+            <h2>Contact Brian</h2>
+            <p>San Francisco, CA</p>
+            <p>bpsimusic@gmail.com</p>
+          </div>
+    </div>
 
-				<div class="col-lg-4">
-					<h4>My Links</h4>
-					<p>
-						<a href="#">Dribbble</a><br/>
-						<a href="#">Twitter</a><br/>
-						<a href="#">Facebook</a>
-					</p>
-				</div><!-- /col-lg-4 -->
-
-				<div class="col-lg-4">
-					<h4>About Stanley</h4>
-					<p>This cute theme was created to showcase your work in a simple way. Use it wisely.</p>
-				</div><!-- /col-lg-4 -->
-
-			</div>
-
-		</div>
 	</div>
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/mywebsite.js"></script>
   </body>
 </html>
