@@ -254,6 +254,11 @@ bt {
 
 .aboutContainer {
   padding-top:80px;
+  width: 100%;
+}
+
+.aboutContainer .row{
+  width: inherit;
 }
 
 .col-lg-4 {
