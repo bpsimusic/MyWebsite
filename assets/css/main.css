@@ -327,11 +327,6 @@ bt {
   font-weight: 600;
 }
 
-
-
-
-
-
 .skillsContainer {
   width: 60%;
   height: 500px;
@@ -372,6 +367,10 @@ bt {
   border-top: 1px solid grey;
 }
 
+.workContainer .row {
+  display: flex;
+}
+
 @media screen and (max-width: 980px) {
   .skillsContainer {
     width: 60%;
@@ -402,8 +401,5 @@ bt {
   .square:nth-child(1) {
     border-top: 1px solid grey;
   }
-
-
-
 
 }
