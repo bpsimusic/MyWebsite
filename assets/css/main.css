@@ -9,6 +9,12 @@
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+.initial {
+  width: 100px;
+  height: 100px;
+}
+
+
 body {
   	background-color: #ffffff;
   	font-family: 'Montserrat', sans-serif;
@@ -226,10 +232,11 @@ a.resume {
 
 #myCarousel {
   width: 80%;
-  height: 450px;
-  margin-top: 20px;
-  margin-left: 100px;
-
+height: 450px;
+margin-left: 100px;
+display: flex;
+align-items: flex-end;
+flex-direction: column;
 }
 
 .carousel-inner > .item > a > img {
@@ -248,12 +255,59 @@ line-height: 1;
 
 }
 
+.carousel-inner {
+  width: 100%;
+  height: 100px;
+}
+
 .carousel-inner > .active, .carousel-inner > .next,
  .carousel-inner > .prev {
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  flex-direction: column;
+   display: flex;
+     justify-content: flex-start;
+     height: 100%;
+     width: 100%;
+}
+
+.carousel-control {
+  height: 100px;
+  top: auto;
+}
+
+
+
+.active .initial {
+  width: 33.3%;
+}
+
+.active img, .next img, .prev img{
+  width: 100%;
+  height: 100px;
+}
+
+
+.active p, .next p, .prev p {
+  font-size: 14px;
+}
+
+.specificDesc {
+  width: 100%;
+    height: 350px;
+    border: 1px solid black;
+}
+
+.carousel-inner .content {
+  display: none;
+}
+
+.inserted {
+  width: 100%;
+height: 100%;
+display: flex;
+}
+
+.inserted img {
+  width: 550px;
+  height: 346px;
 }
 
 .glyphicon-chevron-left:before,
@@ -282,7 +336,14 @@ ul.nav.justify-content-center a.active {
 
 
 
+.descriptionContainer {
+  width: 25%;
+  text-align:center;
+}
 
+.imageContainer {
+  width: 75%;
+}
 
 
 #footer {
@@ -420,7 +481,6 @@ bt {
   text-align: center;
   font-size: 14px;
   font-weight: normal;
-  width: 50%;
   line-height: 14px;
   padding-top: 15px;
 }
