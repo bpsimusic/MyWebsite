@@ -2,7 +2,7 @@ const Projects = require('./projects.js');
 
 $(()=>{
   $(".specificDesc").html(Projects.MusicianHub);
-  attachListeners();
+  attachClickListeners();
 });
 
 $(".work").on("click", function(e){
@@ -36,7 +36,7 @@ $(".nav-item").on("click", function(e){
   if(content === "Algorithms"){
     $(".carousel-inner").empty();
     $(".carousel-inner").html(content2);
-    attachListeners();
+    attachClickListeners();
   }
 });
 $(".nav-item").on("click", function(e){
@@ -44,11 +44,11 @@ $(".nav-item").on("click", function(e){
   if(content === "Projects"){
     $(".carousel-inner").empty();
     $(".carousel-inner").html(content1);
-    attachListeners();
+    attachClickListeners();
   }
 });
 
-function attachListeners(){
+function attachClickListeners(){
   $(".initial").on("click", function(e){
     e.preventDefault();
     const content = $(e.currentTarget).find("img");
@@ -62,6 +62,9 @@ function attachListeners(){
         break;
       case "Pikachu Racer":
         $(".specificDesc").html(Projects.PikachuRacer);
+        break;
+      case "Stay On Task":
+        $(".specificDesc").html(Projects.StayOnTask);
         break;
       case "Ring Buffer":
         $(".specificDesc").html(Projects.RingBuffer);

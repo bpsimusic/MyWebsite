@@ -9,10 +9,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-.initial {
-  width: 100px;
-  height: 100px;
-}
+
 
 
 body {
@@ -165,6 +162,7 @@ a>img {
 .pt {
 	padding-top: 20px;
 	padding-bottom: 50px;
+  margin-top: 100px
 }
 
 
@@ -258,30 +256,35 @@ line-height: 1;
 .carousel-inner {
   width: 100%;
   height: 100px;
+  top: 10px;
 }
 
 .carousel-inner > .active, .carousel-inner > .next,
  .carousel-inner > .prev {
    display: flex;
-     justify-content: flex-start;
-     height: 100%;
-     width: 100%;
+justify-content: space-around;
+height: 100%;
+width: 80%;
+margin: auto;
+    top: 10px;
 }
 
 .carousel-control {
   height: 100px;
   top: auto;
+  bottom: -10px;
 }
 
 
 
 .active .initial {
-  width: 33.3%;
+  width: 127px;
+  height: 80px;
 }
 
 .active img, .next img, .prev img{
-  width: 100%;
-  height: 100px;
+  width: 127px;
+  height: 80px;
 }
 
 
@@ -292,11 +295,18 @@ line-height: 1;
 .specificDesc {
   width: 100%;
     height: 350px;
-    border: 1px solid black;
 }
 
 .carousel-inner .content {
   display: none;
+}
+
+.carousel-inner {
+  width:
+}
+
+.carousel-control {
+  width: 50px;
 }
 
 .inserted {
@@ -306,29 +316,63 @@ display: flex;
 }
 
 .inserted img {
-  width: 550px;
-  height: 346px;
+  position: relative;
+  width: 530px;
+  height: 333px;
+  top: 10px;
 }
 
 .glyphicon-chevron-left:before,
 .glyphicon-chevron-right:before {
   color:#4da6ff;
+
+    font-size: 0.8em;
+    position: relative;
+    bottom: 20px;
 }
 
 
 ul.nav.justify-content-center {
-
   display: flex;
   justify-content: center;
 }
 ul.nav.justify-content-center a {
   color: #4da6ff;
-  background-color: grey;
 }
 ul.nav.justify-content-center a.active {
   color: #4da6ff;
-  background-color: white;
+
 }
+
+ul.nav.justify-content-center li {
+  border-bottom: 0px;
+  background-color: grey;
+}
+
+ul.nav.justify-content-center li:first-child {
+  border-right: none;
+
+}
+
+.nav-item {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+     background-color: white;
+}
+
+.carousel-inner .initial:hover {
+  transform:scale(1.1);
+  transition: transform 0.3s;
+}
+
+
+
 
 .algorithms {
   display: none;
@@ -338,12 +382,19 @@ ul.nav.justify-content-center a.active {
 
 .descriptionContainer {
   width: 25%;
-  text-align:center;
+    text-align: center;
+    position: relative;
+
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .imageContainer {
   width: 75%;
 }
+
 
 
 #footer {

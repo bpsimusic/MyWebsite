@@ -2,7 +2,7 @@
 const MusicianHub = `
 <div class="inserted">
   <div class="imageContainer">
-    <a href="http://www.musicianhub.audio/#/"><img src="assets/img/portfolio/musicianhub.png" alt="Musician Hub" /></a>
+    <a href="http://www.musicianhub.audio/#/"><img class="img-responsive" src="assets/img/portfolio/musicianhub.png" alt="Musician Hub" /></a>
   </div>
   <div class="descriptionContainer">
     <p class="specificProject">Musician Hub</p>
@@ -50,6 +50,24 @@ const PikachuRacer = `
     <p class="project-desc">Pikachu Racer is a game coded using vanilla JavaScript and the Canvas API.
       Sprite and Entity architecture are used to render the images and detect collisions.
       Pikachu Racer is inspired by Super Mario and the Chrome Dinosaur game.</p>
+  </div>
+</div>`
+;
+const StayOnTask = `
+<div class="inserted">
+  <div class="imageContainer">
+    <a href="https://chrome.google.com/webstore/detail/stay-on-task/ihopiehopegcihbohemjoicccjdhgnoc">
+      <img class="img-responsive" src="assets/img/portfolio/StayOnTask.png" alt="Stay On Task"/>    </a>
+  </div>
+  <div class="descriptionContainer">
+    <p class="project-title">Stay On Task</p>
+    <div class="project-links">
+      <a href="https://chrome.google.com/webstore/detail/stay-on-task/ihopiehopegcihbohemjoicccjdhgnoc">live</a>
+      <a href="https://github.com/bpsimusic/stayontask">github</a>
+    </div>
+    <p class="project-desc">Stay On Task is a Google Chrome Extension that blocks websites and creates a customized to-do list.
+      It uses the chrome.storage API to store websites and tasks,
+      as well as content-scripts to provide the user interface on each browser tab.</p>
   </div>
 </div>`
 ;
@@ -117,6 +135,7 @@ module.exports =
 {MusicianHub,
  Liftables,
  PikachuRacer,
+ StayOnTask,
  QuickSort,
  HeapSort,
  RingBuffer
