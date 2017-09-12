@@ -67,9 +67,7 @@ p {
 
 /* Links */
 a {
-    color: #1abc9c;
     word-wrap: break-word;
-
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
     -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -173,6 +171,7 @@ a>img {
   width: 100%;
   position: relative;
   top: 91px;
+      justify-content: space-around;
 }
 
 
@@ -223,18 +222,20 @@ a.resume {
 }
 
 #projects {
-  width: 75%;
+  width: 65%;
   height: 500px;
   background-color: white;
+      margin-top: 20px;
+      min-width: 600px
 }
 
 #myCarousel {
-  width: 80%;
 height: 450px;
 margin-left: 100px;
 display: flex;
 align-items: flex-end;
 flex-direction: column;
+min-width: 600px;
 }
 
 .carousel-inner > .item > a > img {
@@ -301,9 +302,7 @@ margin: auto;
   display: none;
 }
 
-.carousel-inner {
-  width:
-}
+
 
 .carousel-control {
   width: 50px;
@@ -311,8 +310,9 @@ margin: auto;
 
 .inserted {
   width: 100%;
-height: 100%;
-display: flex;
+      height: 333px;
+      display: flex;
+      justify-content: space-between;
 }
 
 .inserted img {
@@ -331,40 +331,67 @@ display: flex;
     bottom: 20px;
 }
 
+.biggerContainer {
+position: relative;
+top: 91px;
+}
 
-ul.nav.justify-content-center {
+body {
+  background: #eeeeee;
+}
+
+.welcomeContainer{
+  position:relative;
+  top: 0px !important;
+}
+
+#welcome {
+  position: relative;
+    top: 20px;
+    min-width:200px;
+}
+
+
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+}
+
+
+
+ul.nav.right {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  background-color: #eeeeee;
 }
-ul.nav.justify-content-center a {
+ul.nav.right a {
   color: #4da6ff;
+  background: #eeeeee;
 }
-ul.nav.justify-content-center a.active {
+ul.nav.right a.active {
   color: #4da6ff;
-
+  background-color: white;
 }
 
-ul.nav.justify-content-center li {
+ul.nav.right li {
+  width: 120px;
   border-bottom: 0px;
   background-color: grey;
 }
 
-ul.nav.justify-content-center li:first-child {
+
+
+ul.nav.right li:first-child {
   border-right: none;
 
 }
 
 .nav-item {
   width: 250px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
 }
 
 
-.nav > li > a:hover, .nav > li > a:focus {
-    text-decoration: none;
-     background-color: white;
-}
+
 
 .carousel-inner .initial:hover {
   transform:scale(1.1);
@@ -382,17 +409,19 @@ ul.nav.justify-content-center li:first-child {
 
 .descriptionContainer {
   width: 25%;
-    text-align: center;
-    position: relative;
-
-    margin-right: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  height: 333px;
+  text-align: center;
+  position: relative;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100px;
 }
 
 .imageContainer {
   width: 75%;
+height: 333px;
 }
 
 
@@ -458,33 +487,7 @@ bt {
 	font-size: 12px;
 }
 
-/* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
-/* Effects also are controled by hover.zoom.js */
-.zoom {
-    display:block;
-    position:relative;
-    overflow:hidden;
-    background:transparent url(../img/loader.gif) no-repeat center;
-}
 
-
-    .zoomOverlay {
-        position:absolute;
-        top:0; left:0;
-        bottom:0; right:0;
-        display:none;
-        background-image:url(../img/zoom.png);
-        background-repeat:no-repeat;
-        background-position:center;
-    }
-
-.zoom2 {
-	opacity: 1;
-}
-
-.zoom2:hover {
-	opacity: 0.5;
-}
 
 /* glyphicon Configuration */
 
