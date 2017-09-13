@@ -130,6 +130,57 @@ const QuickSort = `
   </div>
 </div>`
 ;
+const HashMap = `
+<div class="inserted">
+  <div class="imageContainer">
+    <a href="https://github.com/bpsimusic/HashMap-LRUCache">
+    <img class="img-responsive" src="assets/img/portfolio/HashImage.png" alt="HashMap" />
+    </a>
+  </div>
+  <div class="descriptionContainer">
+    <p class="project-title">Hash Map and LRU Cache</p>
+    <div class="project-links">
+    <a href="https://github.com/bpsimusic/HashMap-LRUCache">github</a>
+    </div>
+    <p class="project-desc">I implemented my own HashMap in Ruby using a LinkedList and a XOR-based hashing algorithm. CRUD
+      operations for the HashMap all run in O(1) time. LRU Cache is created using a HashMap and LinkedList; CRUD operations are also
+    O(1).</p>
+  </div>
+</div>`
+;
+
+const BST = `
+<div class="inserted">
+  <div class="imageContainer">
+    <a href="https://github.com/bpsimusic/Binary-Search-Tree"><img class="img-responsive" src="assets/img/portfolio/binarytree.png" alt="Binary Search Tree" /></a>
+  </div>
+  <div class="descriptionContainer">
+    <p class="project-title">Binary Search Tree</p>
+    <div class="project-links">
+      <a href="https://github.com/bpsimusic/Binary-Search-Tree">github</a>
+    </div>
+    <p class="project-desc">I created my own BinarySearchTree in Ruby. It has find, insert, and delete operations in O(log n) time.
+      It also tells you whether it's balanced, its depth, and contains in-order traversal.
+    </p>
+  </div>
+</div>`
+;
+
+const Graphs = `
+<div class="inserted">
+  <div class="imageContainer">
+    <a href="https://github.com/bpsimusic/Graphs"><img class="img-responsive" src="assets/img/portfolio/graph.png" alt="Graphs" /></a>
+  </div>
+  <div class="descriptionContainer">
+    <p class="project-title">Graphs</p>
+    <div class="project-links">
+      <a href="https://github.com/bpsimusic/Graphs">github</a>
+    </div>
+    <p class="project-desc">I implemented my own Graph in Ruby by creating Vertex and Edge classes. I implemented Topological Sort using
+    Kahn's algorithm. Time complexity is O(|V| + |E|).</p>
+  </div>
+</div>`
+;
 
 module.exports =
 {MusicianHub,
@@ -138,5 +189,8 @@ module.exports =
  StayOnTask,
  QuickSort,
  HeapSort,
- RingBuffer
+ RingBuffer,
+ HashMap,
+ BST,
+ Graphs
                   };
