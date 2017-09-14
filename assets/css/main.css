@@ -96,6 +96,12 @@ a>img {
   border: 1px solid #cccccc;
 }
 
+span.contact {
+  font-weight:bold;
+}
+
+
+
  hr {
     display: block;
     height: 1px;
@@ -163,7 +169,14 @@ a>img {
   margin-top: 100px
 }
 
-
+.backgroundCircle {
+  width: 160px;
+height: 160px;
+border-radius: 50%;
+border: 1px solid #eeeeee;
+position: absolute;
+top: 15px;
+}
 
 
 .welcomeContainer {
@@ -179,15 +192,18 @@ top: 91px;
 
 
 #welcome {
-  padding-bottom: 70px;
   background-color: white;
   width: 25%;
   margin-left: 50px;
-  height: 500px;
   display: flex;
   flex-direction: column;
   align-items:center;
   text-align:center;
+  border: 1px solid #cccccc;
+border-radius: 10px;
+    min-width:200px;
+    height: 100%;
+
 }
 
 .round-profile-pic {
@@ -218,13 +234,10 @@ height: 27px;
   height: 200px;
 }
 
-a.resume {
-  height: 105px;
-  width: 52px;
-}
+
 
 #projects {
-  width: 65%;
+  width: 60%;
   height: 100%;
   background-color: white;
   min-width: 600px
@@ -339,10 +352,7 @@ body {
 
 
 
-#welcome {
-    min-width:200px;
-    height: 100%;
-}
+
 
 
 .carousel-control.right, .carousel-control.left {

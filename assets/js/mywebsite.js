@@ -41,6 +41,7 @@ $(".nav-item").on("click", function(e){
     $("#projects").append(newCarousel);
     attachCarouselClickListeners();
     attachClickListeners();
+    $('#myCarousel').bind('slide.bs.carousel', onSlide);
     $(".specificDesc").empty();
     $(".specificDesc").html(Projects.RingBuffer);
   }
@@ -53,6 +54,7 @@ $(".nav-item").on("click", function(e){
     $("#projects").append(newCarousel);
     attachCarouselClickListeners();
     attachClickListeners();
+    $('#myCarousel').bind('slide.bs.carousel', onSlide);
     $(".specificDesc").empty();
     $(".specificDesc").html(Projects.MusicianHub);
   }
@@ -122,6 +124,42 @@ function attachCarouselClickListeners(){
         default: break;
         }
   });
+}
+
+
+function onSlide(event){
+    $(".specificDesc").empty();
+    let c = $(".active .first-carousel-child").first();
+      switch(c.attr("alt")){
+        case "Musician Hub":
+          $(".specificDesc").html(Projects.MusicianHub);
+          break;
+        case "Ring Buffer":
+          $(".specificDesc").html(Projects.BST);
+          break;
+        case "Binary Search Tree":
+          $(".specificDesc").html(Projects.RingBuffer);
+          break;
+        default: break;
+    }
+}
+
+function onSlide(event) {
+    $(".specificDesc").empty();
+    let c = $(".active .first-carousel-child").first();
+      switch(c.attr("alt")){
+        case "Musician Hub":
+          $(".specificDesc").html(Projects.MusicianHub);
+          break;
+        case "Ring Buffer":
+          $(".specificDesc").html(Projects.BST);
+          break;
+        case "Binary Search Tree":
+          $(".specificDesc").html(Projects.RingBuffer);
+          break;
+        default: break;
+        }
+
 }
 
 
