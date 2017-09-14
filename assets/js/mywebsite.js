@@ -29,8 +29,11 @@ $(".contact").on("click", function(e){
 
 /*Navbar functionality for projects*/
 $(".nav-item").on("click", function(e){
+  $(".nav-link.active").parent().removeClass("active");
   $(".nav-link.active").removeClass("active");
+  
   $(e.target).addClass("active");
+  $(e.target).parent().addClass("active");
 });
 
 $(".nav-item").on("click", function(e){
@@ -44,6 +47,7 @@ $(".nav-item").on("click", function(e){
     $('#myCarousel').bind('slide.bs.carousel', onSlide);
     $(".specificDesc").empty();
     $(".specificDesc").html(Projects.RingBuffer);
+    $('#myCarousel').carousel("pause");
   }
 });
 $(".nav-item").on("click", function(e){
@@ -57,6 +61,7 @@ $(".nav-item").on("click", function(e){
     $('#myCarousel').bind('slide.bs.carousel', onSlide);
     $(".specificDesc").empty();
     $(".specificDesc").html(Projects.MusicianHub);
+    $('#myCarousel').carousel("pause");
   }
 });
 
@@ -126,11 +131,10 @@ function attachCarouselClickListeners(){
   });
 }
 
-
 function onSlide(event){
     $(".specificDesc").empty();
-    let c = $(".active .first-carousel-child").first();
-      switch(c.attr("alt")){
+    let firstChild = $(".active .first-carousel-child").first();
+      switch(firstChild.attr("alt")){
         case "Musician Hub":
           $(".specificDesc").html(Projects.MusicianHub);
           break;
@@ -143,30 +147,6 @@ function onSlide(event){
         default: break;
     }
 }
-
-function onSlide(event) {
-    $(".specificDesc").empty();
-    let c = $(".active .first-carousel-child").first();
-      switch(c.attr("alt")){
-        case "Musician Hub":
-          $(".specificDesc").html(Projects.MusicianHub);
-          break;
-        case "Ring Buffer":
-          $(".specificDesc").html(Projects.BST);
-          break;
-        case "Binary Search Tree":
-          $(".specificDesc").html(Projects.RingBuffer);
-          break;
-        default: break;
-        }
-
-}
-
-
-
-
-
-
 
 
 const content1=`<div class="item active">

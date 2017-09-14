@@ -1,9 +1,10 @@
 
 const MusicianHub = `
 <div class="inserted">
-  <div class="imageContainer">
-    <a href="http://www.musicianhub.audio/#/"><img class="img-responsive" src="assets/img/portfolio/musicianhub.png" alt="Musician Hub" /></a>
-  </div>
+    <div class="imageContainer">
+      <a href="http://www.musicianhub.audio/#/"><img class="img-responsive" src="assets/img/portfolio/musicianhub.png" alt="Musician Hub" /></a>
+    </div>
+
   <div class="descriptionContainer">
     <p class="specificProject">Musician Hub</p>
     <div class="project-links">
