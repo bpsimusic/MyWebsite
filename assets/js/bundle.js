@@ -75,19 +75,15 @@ $(()=>{
   attachClickListeners();
 });
 
-$(".work").on("click", function(e){
-  $('html, body').animate({
-    scrollTop: $(".workContainer").offset().top -25
-  }, "slow");
-});
+
 $(".about").on("click", function(e){
   $('html, body').animate({
-    scrollTop: $(".welcomeContainer").offset().top -30
+    scrollTop: $(".welcomeContainer").offset().top -100
   }, "slow");
 });
 $(".skills").on("click", function(e){
   $('html, body').animate({
-    scrollTop: $(".skillsSection").offset().top -50
+    scrollTop: $(".skillsSection").offset().top -15
   }, "slow");
 });
 $(".contact").on("click", function(e){
@@ -100,7 +96,7 @@ $(".contact").on("click", function(e){
 $(".nav-item").on("click", function(e){
   $(".nav-link.active").parent().removeClass("active");
   $(".nav-link.active").removeClass("active");
-  
+
   $(e.target).addClass("active");
   $(e.target).parent().addClass("active");
 });

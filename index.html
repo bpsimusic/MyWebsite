@@ -43,7 +43,6 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a class="navLink about">About</a></li>
-            <li><a class="navLink work">Work</a></li>
             <li><a class="navLink skills">Skills</a></li>
             <li><a class="navLink contact">Contact</a></li>
           </ul>
@@ -109,125 +108,6 @@
     </div>
 </div>
 
-
-
-
-
-
-
-	<!-- +++++ Projects Section +++++ -->
-
-	<div class="container pt workContainer">
-		<div class="row mt centered">
-			<div class="col-lg-4">
-        <p class="project-title">Musician Hub</p>
-				<a href="http://www.musicianhub.audio/#/"><img class="img-responsive" src="assets/img/portfolio/musicianhub.png" alt="Musician Hub" /></a>
-        <div class="project-links">
-          <a href="http://www.musicianhub.audio/#/">live</a>
-          <a href="https://github.com/bpsimusic/musicianhub">github</a>
-        </div>
-        <p class="project-desc">MusicianHub is a full-stack web application based off Bandcamp. It uses Ruby on Rails on the backend,
-          PostgreSQL for the database, and React.js with a Redux framework for the frontend.</p>
-			</div>
-			<div class="col-lg-4">
-        <p class="project-title">Liftables</p>
-				<a href="https://github.com/huynhaaron/liftables"><img class="img-responsive" src="assets/img/portfolio/liftables.png" alt="Liftables" /></a>
-        <div class="project-links">
-          <a href="https://play.google.com/store/apps/details?id=com.liftables">live</a>
-          <a href="https://github.com/huynhaaron/liftables">github</a>
-        </div>
-        <p class="project-desc">Liftables is a React Native application that uses Firebase as its backend.
-          Users can create customized workouts and follow a daily schedule that creates exercises based on the user's personal stats.</p>
-			</div>
-			<div class="col-lg-4">
-        <p class="project-title">Pikachu Racer</p>
-				<a href="https://bpsimusic.github.io/PikachuRacer/"><img class="img-responsive" src="assets/img/portfolio/PikachuRacer.png" alt="Pikachu Racer" /></a>
-        <div class="project-links">
-          <a href="https://bpsimusic.github.io/PikachuRacer/">live</a>
-          <a href="https://github.com/bpsimusic/pikachuracer">github</a>
-        </div>
-        <p class="project-desc">Pikachu Racer is a game coded using vanilla JavaScript and the Canvas API.
-          Sprite and Entity architecture are used to render the images and detect collisions.
-          Pikachu Racer is inspired by Super Mario and the Chrome Dinosaur game.</p>
-			</div>
-    </div><!-- /row -->
-    <div class="row mt centered">
-      <div class="col-lg-4">
-        <p class="project-title">Stay On Task</p>
-        <a href="https://chrome.google.com/webstore/detail/stay-on-task/ihopiehopegcihbohemjoicccjdhgnoc"><img class="img-responsive" src="assets/img/portfolio/StayOnTask.png" alt="Stay On Task" /></a>
-        <div class="project-links">
-          <a href="https://chrome.google.com/webstore/detail/stay-on-task/ihopiehopegcihbohemjoicccjdhgnoc">live</a>
-          <a href="https://github.com/bpsimusic/stayontask">github</a>
-        </div>
-        <p class="project-desc">Stay On Task is a Google Chrome Extension that blocks websites and creates a customized to-do list.
-          It uses the chrome.storage API to store websites and tasks,
-          as well as content-scripts to provide the user interface on each browser tab.</p>
-			</div>
-      <div class="col-lg-4">
-        <p class="project-title">Dynamic Array, Ring Buffer</p>
-				<a href="https://github.com/bpsimusic/StaticDynamicArray"><img class="img-responsive" src="assets/img/portfolio/ringbuffer.png" alt="Ring Buffer"/></a>
-        <div class="project-links">
-          <a href="https://github.com/bpsimusic/StaticDynamicArray">github</a>
-        </div>
-        <p class="project-desc">I created my own Dynamic Array from a Static Array in Ruby. Get and set operations take O(1) time,
-          push operations take O(1) ammortized time, while shift and unshift operations take O(n) time. I improved shift and unshift operations
-          to O(1) time by implementing a Ring Buffer.</p>
-			</div>
-      <div class="col-lg-4">
-        <p class="project-title">Heaps, Heapsort</p>
-				<a href="https://github.com/bpsimusic/HeapSort"><img class="img-responsive" src="assets/img/portfolio/heapsort.png" alt="Heapsort" /></a>
-        <div class="project-links">
-          <a href="https://github.com/bpsimusic/HeapSort">github</a>
-        </div>
-        <p class="project-desc">I created a Binary Min Heap in Ruby that can also be used as a Binary Max Heap.
-        The heap contains heapify up and heapify down methods, which run in O(log n) time. Using the heap structure,
-        I was able to implement Heapsort, which runs in O(n*log n) time and O(1) space.</p>
-			</div>
-		</div><!-- /row -->
-    <div class="row mt centered">
-      <div class="col-lg-4">
-        <p class="project-title">Quicksort</p>
-				<a href="https://github.com/bpsimusic/Quicksort.git"><img class="img-responsive" src="assets/img/portfolio/quicksort.png" alt="Quicksort" /></a>
-        <div class="project-links">
-          <a href="https://github.com/bpsimusic/Quicksort">github</a>
-        </div>
-        <p class="project-desc">I implemented Quicksort in Ruby.
-          Time complexity is O(n*log n) for the average case and O(n^2) for the worst case.
-        I made a small space optimization by partitioning the array in place. </p>
-			</div>
-      <div class="col-lg-4">
-        <p class="project-title">Hash Map and LRU Cache</p>
-				<a href="https://github.com/bpsimusic/HashMap-LRUCache"><img class="img-responsive" src="assets/img/portfolio/HashImage.png" alt="HashMap" /></a>
-        <div class="project-links">
-          <a href="https://github.com/bpsimusic/HashMap-LRUCache">github</a>
-        </div>
-        <p class="project-desc">I implemented my own HashMap in Ruby using a LinkedList and a XOR-based hashing algorithm. CRUD
-          operations for the HashMap all run in O(1) time. LRU Cache is created using a HashMap and LinkedList; CRUD operations are also
-        O(1).</p>
-      </div>
-      <div class="col-lg-4">
-        <p class="project-title">Binary Search Tree</p>
-				<a href="https://github.com/bpsimusic/Binary-Search-Tree"><img class="img-responsive" src="assets/img/portfolio/binarytree.png" alt="Binary Search Tree" /></a>
-        <div class="project-links">
-          <a href="https://github.com/bpsimusic/Binary-Search-Tree">github</a>
-        </div>
-        <p class="project-desc">I created my own BinarySearchTree in Ruby. It has find, insert, and delete operations in O(log n) time.
-          It also tells you whether it's balanced, its depth, and contains in-order traversal.
-        </p>
-      </div>
-    </div>
-    <div class="row mt centered">
-      <div class="col-lg-4">
-        <p class="project-title">Graphs </p>
-				<a href="https://github.com/bpsimusic/Graphs"><img class="img-responsive" src="assets/img/portfolio/graph.png" alt="Graphs" /></a>
-        <div class="project-links">
-          <a href="https://github.com/bpsimusic/Graphs">github</a>
-        </div>
-        <p class="project-desc">I implemented my own Graph in Ruby by creating Vertex and Edge classes. I implemented Topological Sort using
-        Kahn's algorithm. Time complexity is O(|V| + |E|).</p>
-      </div>
-    </div>
-	</div><!-- /container -->
   <div class="skillsSection">
     <h3>I am skilled in the following technologies, and learning more: </h3>
     <div class="container pt skillsContainer">
@@ -282,6 +162,7 @@
             <h2>Contact Brian</h2>
             <p>San Francisco, CA</p>
             <p>briantsai91@gmail.com</p>
+            <p>(408)691-9278</p>
           </div>
     </div>
 </div>
