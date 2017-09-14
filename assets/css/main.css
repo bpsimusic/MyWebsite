@@ -537,6 +537,18 @@ bt {
 }
 
 
+.modal-dialog {
+  display: flex;
+  justify-content: center;
+  width: 900px;
+}
+
+
+.modal-content {
+  width: 100%;
+}
+
+
 
 /* glyphicon Configuration */
 
