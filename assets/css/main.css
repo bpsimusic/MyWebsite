@@ -3,7 +3,6 @@
 
 
 
-
 body {
   	background-color: #ffffff;
   	font-family: 'Montserrat', sans-serif;
@@ -632,6 +631,10 @@ bt {
   font-size: 20px;
   font-weight: 600;
   color: #4da6ff;
+}
+
+.resume:hover {
+  cursor:pointer;
 }
 
 .skillsContainer {
