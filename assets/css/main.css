@@ -688,6 +688,10 @@ bt {
   opacity: 0.8;
 }
 
+div.modal-body object{
+  height: 85vh;
+}
+
 .icon {
   border-radius: 15px;
 }
