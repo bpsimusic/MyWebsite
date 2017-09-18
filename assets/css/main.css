@@ -834,7 +834,9 @@ bt {
 
   div.contact {
     font-size: 16px;
+    margin-bottom: 10px;
   }
+
 
   #linksContainer {
     width: 100px;
@@ -875,5 +877,19 @@ bt {
 
   h3{
     font-size: 30px;
+  }
+}
+
+
+@media screen and (min-width: 1600px){
+  .item .initial {
+    width: 127px;
+    margin-right: 100px;
+  }
+}
+@media screen and (min-width: 1900px){
+  .item .initial {
+    width: 127px;
+    margin-right: 130px;
   }
 }
