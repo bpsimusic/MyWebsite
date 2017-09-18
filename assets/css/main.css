@@ -799,9 +799,23 @@ top: 91px;
   justify-content: space-between;
 }
 
+.inserted img {
+  position: relative;
+width: 530px;
+height: 333px;
+top: 10px;
+}
+
 @media screen and (min-width: 1400px) {
   .welcomeContainer {
     width: 100%;
     height: 82vh;
+  }
+
+  .inserted img {
+    position: relative;
+  width: 100%;
+  height: auto;
+  top: 10px;
   }
 }
