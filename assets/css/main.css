@@ -821,6 +821,7 @@ bt {
   .backgroundCircle {
     width: 180px;
     height: 180px;
+    top: 17px;
   }
 
   #welcome p {
