@@ -97,7 +97,6 @@ div.contact {
   font-weight:bold;
   margin:auto;
   margin-top: 10px;
-  margin-bottom:25px;
   text-align:left;
 }
 
@@ -825,11 +824,11 @@ bt {
   }
 
   #welcome p {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   #welcome h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   div.contact {
