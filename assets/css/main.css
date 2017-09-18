@@ -851,4 +851,25 @@ bt {
   .resume {
     font-size: 25px;
   }
+
+  .project-desc {
+    font-size: 15px;
+    line-height: 15px;
+    max-width:100%;
+  }
+
+  p.specificProject {
+    line-height: 15px;
+    font-size: 15px;
+  }
+
+  .specificProject {
+    width: auto;
+    line-height: 28px;
+    font-size: 28px;
+  }
+
+  ul.nav.right a {
+    font-size: 15px;
+  }
 }
