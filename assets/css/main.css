@@ -829,6 +829,11 @@ div.modal-body object{
     height: 170px;
   }
 
+  .circleContainer {
+    width: 180px;
+    height:180px;
+  }
+
   .backgroundCircle {
     width: 180px;
     height: 180px;
