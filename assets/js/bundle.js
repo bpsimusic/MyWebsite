@@ -261,7 +261,7 @@ const content2=`<div class="item active">
 const MusicianHub = `
 <div class="inserted">
     <div class="imageContainer">
-      <a href="http://www.musicianhub.audio/#/"><img class="img-responsive" src="assets/img/portfolio/musicianhub.png" alt="Musician Hub" /></a>
+      <a href="http://www.musicianhub.audio/#/"><img src="assets/img/portfolio/musicianhub.png" alt="Musician Hub" /></a>
     </div>
 
   <div class="descriptionContainer">
@@ -280,7 +280,7 @@ const MusicianHub = `
 const Liftables = `
 <div class="inserted">
   <div class="imageContainer">
-    <a href="https://github.com/huynhaaron/liftables"><img class="img-responsive" src="assets/img/portfolio/liftables.png" alt="Liftables" /></a>
+    <a href="https://github.com/huynhaaron/liftables"><img src="assets/img/portfolio/liftables.png" alt="Liftables" /></a>
   </div>
   <div class="descriptionContainer">
   <p class="project-title">Liftables</p>
@@ -300,7 +300,7 @@ const PikachuRacer = `
 <div class="inserted">
   <div class="imageContainer">
     <a href="https://bpsimusic.github.io/PikachuRacer/">
-    <img class="img-responsive" src="assets/img/portfolio/PikachuRacer.png" alt="Pikachu Racer" />
+    <img src="assets/img/portfolio/PikachuRacer.png" alt="Pikachu Racer" />
     </a>
   </div>
   <div class="descriptionContainer">
@@ -320,7 +320,7 @@ const StayOnTask = `
 <div class="inserted">
   <div class="imageContainer">
     <a href="https://chrome.google.com/webstore/detail/stay-on-task/ihopiehopegcihbohemjoicccjdhgnoc">
-      <img class="img-responsive" src="assets/img/portfolio/StayOnTask.png" alt="Stay On Task"/>    </a>
+      <img src="assets/img/portfolio/StayOnTask.png" alt="Stay On Task"/>    </a>
   </div>
   <div class="descriptionContainer">
     <p class="project-title">Stay On Task</p>
@@ -361,7 +361,7 @@ const HeapSort = `
 <div class="inserted">
   <div class="imageContainer">
     <a href="https://github.com/bpsimusic/HeapSort"></a>
-    <img class="img-responsive" src="assets/img/portfolio/heapsort.png" alt="Heapsort" /></a>
+    <img src="assets/img/portfolio/heapsort.png" alt="Heapsort" /></a>
   </div>
   <div class="descriptionContainer">
   <p class="project-title">HeapSort</p>
@@ -398,7 +398,7 @@ const HashMap = `
 <div class="inserted">
   <div class="imageContainer">
     <a href="https://github.com/bpsimusic/HashMap-LRUCache">
-    <img class="img-responsive" src="assets/img/portfolio/HashImage.png" alt="HashMap" />
+    <img src="assets/img/portfolio/HashImage.png" alt="HashMap" />
     </a>
   </div>
   <div class="descriptionContainer">
@@ -416,7 +416,7 @@ const HashMap = `
 const BST = `
 <div class="inserted">
   <div class="imageContainer">
-    <a href="https://github.com/bpsimusic/Binary-Search-Tree"><img class="img-responsive" src="assets/img/portfolio/binarytree.png" alt="Binary Search Tree" /></a>
+    <a href="https://github.com/bpsimusic/Binary-Search-Tree"><img src="assets/img/portfolio/binarytree.png" alt="Binary Search Tree" /></a>
   </div>
   <div class="descriptionContainer">
     <p class="project-title">Binary Search Tree</p>
@@ -433,7 +433,7 @@ const BST = `
 const Graphs = `
 <div class="inserted">
   <div class="imageContainer">
-    <a href="https://github.com/bpsimusic/Graphs"><img class="img-responsive" src="assets/img/portfolio/graph.png" alt="Graphs" /></a>
+    <a href="https://github.com/bpsimusic/Graphs"><img src="assets/img/portfolio/graph.png" alt="Graphs" /></a>
   </div>
   <div class="descriptionContainer">
     <p class="project-title">Graphs</p>

@@ -193,7 +193,6 @@ top: 15px;
 .welcomeContainer {
   display: flex;
 width: 100%;
-height: 485px;
 min-height: 460px;
 top: 91px;
   position: relative;
@@ -219,7 +218,6 @@ top: 91px;
   border: 1px solid #cccccc;
 border-radius: 10px;
     min-width:200px;
-    height: 100%;
     min-height: 480px;
 }
 
@@ -287,7 +285,6 @@ left: 5px;
 }
 
 #myCarousel {
-height: 93.5%;
 display: flex;
 align-items: flex-end;
 flex-direction: column;
@@ -314,10 +311,13 @@ line-height: 1;
 }
 
 .carousel-inner {
-height: 18%;
-width: 85%;
-margin: auto;
-border-radius: 10px;
+
+  width: 85%;
+      margin: auto;
+      border-radius: 10px;
+      padding-bottom: 20px;
+      padding-top: 10px;
+      margin-top: 20px;
 }
 
 p {
@@ -346,7 +346,7 @@ p {
 
 
 .carousel-control {
-  height: 21.9%;
+  height: 120px;
     top: auto;
 }
 
@@ -370,8 +370,7 @@ p {
 
 .specificDesc {
   width: 100%;
-    height: 82%;
-        max-height: 360px;
+  padding-top: 18px;
 }
 
 .specificProject {
@@ -390,7 +389,6 @@ p {
 
 .inserted {
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -405,8 +403,6 @@ p {
 .inserted img {
   position: relative;
 width: 530px;
-height: 333px;
-top: 10px;
 }
 
 .glyphicon-chevron-left:before,
@@ -658,7 +654,6 @@ bt {
   width: 65%;
   min-width: 530px;
   position: relative;
-  top: 8px;
 }
 
 .col-lg-4 .project-links {
@@ -788,26 +783,11 @@ bt {
 
 }
 
-.welcomeContainer {
-  display: flex;
-width: 100%;
-height: 485px;
-min-height: 460px;
-top: 91px;
-  position: relative;
-  justify-content: space-between;
-}
 
-.inserted img {
-  position: relative;
-width: 530px;
-top: 10px;
-}
 
 @media screen and (min-width: 1400px) {
   .welcomeContainer {
     width: 100%;
-    height: auto;
   }
 
   .specificDesc {
@@ -818,7 +798,6 @@ top: 10px;
 
   .inserted {
     width: 100%;
-  height: auto;
   }
 
 
@@ -826,7 +805,5 @@ top: 10px;
   .inserted img {
     position: relative;
   width: 100%;
-  height: auto;
-  top: 10px;
   }
 }
