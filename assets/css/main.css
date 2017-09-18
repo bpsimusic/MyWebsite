@@ -807,7 +807,6 @@ top: 10px;
 @media screen and (min-width: 1400px) {
   .welcomeContainer {
     width: 100%;
-    height: 600px;
   }
 
   .inserted img {
