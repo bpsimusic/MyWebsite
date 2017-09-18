@@ -268,6 +268,7 @@ const MusicianHub = `
     <p class="specificProject">Musician Hub</p>
     <div class="project-links">
       <a href="http://www.musicianhub.audio/#/">live</a>
+      <span>  |  </span>
       <a href="https://github.com/bpsimusic/musicianhub">github</a>
     </div>
     <p class="project-desc">MusicianHub is a full-stack web application based off Bandcamp. It uses Ruby on Rails on the backend,
@@ -286,6 +287,7 @@ const Liftables = `
 
     <div class="project-links">
         <a href="https://play.google.com/store/apps/details?id=com.liftables">live</a>
+        <span>  |  </span>
         <a href="https://github.com/huynhaaron/liftables">github</a>
       </div>
       <p class="project-desc">Liftables is a React Native application that uses Firebase as its backend.
@@ -305,6 +307,7 @@ const PikachuRacer = `
     <p class="project-title">Pikachu Racer</p>
     <div class="project-links">
       <a href="https://bpsimusic.github.io/PikachuRacer/">live</a>
+      <span>  |  </span>
       <a href="https://github.com/bpsimusic/pikachuracer">github</a>
     </div>
     <p class="project-desc">Pikachu Racer is a game coded using vanilla JavaScript and the Canvas API.
@@ -323,6 +326,7 @@ const StayOnTask = `
     <p class="project-title">Stay On Task</p>
     <div class="project-links">
       <a href="https://chrome.google.com/webstore/detail/stay-on-task/ihopiehopegcihbohemjoicccjdhgnoc">live</a>
+      <span>  |  </span>
       <a href="https://github.com/bpsimusic/stayontask">github</a>
     </div>
     <p class="project-desc">Stay On Task is a Google Chrome Extension that blocks websites and creates a customized to-do list.
