@@ -97,6 +97,7 @@ div.contact {
   font-weight:bold;
   margin:auto;
   margin-top: 10px;
+    margin-bottom: 10px;
   text-align:left;
 }
 
@@ -181,12 +182,17 @@ div.skillsContainer {
 
 .backgroundCircle {
   width: 160px;
-height: 160px;
-border-radius: 50%;
-border: 1px solid #eeeeee;
-position: absolute;
+    height: 160px;
+    border-radius: 50%;
+    border: 1px solid #eeeeee;
+    position: absolute;
+}
 
-    top: 19px;
+.circleContainer {
+  width: 160px;
+height: 160px;
+margin-top: 20px;
+position: relative;
 }
 
 
@@ -232,7 +238,8 @@ margin-top: 20px;
 
 #welcome img {
   width: 150px;
-  height: 150px;
+    height: 150px;
+    margin-top: 5px;
 }
 
 #welcome p {
@@ -825,7 +832,6 @@ div.modal-body object{
   .backgroundCircle {
     width: 180px;
     height: 180px;
-    top: 17px;
   }
 
   #welcome p {
