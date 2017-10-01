@@ -61,8 +61,8 @@ $(".nav-item").on("click", function(e){
   }
 });
 
-/**/
 
+// attach click listeners to carousel items
 function attachClickListeners(){
   $(".initial").on("click", function(e){
     e.preventDefault();
@@ -104,6 +104,7 @@ function attachClickListeners(){
   });
 }
 
+// attach left right carousel controls
 function attachCarouselClickListeners(){
   $(".carousel-control").click((e)=>{
     e.preventDefault();

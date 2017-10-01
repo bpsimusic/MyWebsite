@@ -130,8 +130,8 @@ $(".nav-item").on("click", function(e){
   }
 });
 
-/**/
 
+// attach click listeners to carousel items
 function attachClickListeners(){
   $(".initial").on("click", function(e){
     e.preventDefault();
@@ -173,6 +173,7 @@ function attachClickListeners(){
   });
 }
 
+// attach left right carousel controls
 function attachCarouselClickListeners(){
   $(".carousel-control").click((e)=>{
     e.preventDefault();
@@ -360,7 +361,7 @@ const RingBuffer = `
 const HeapSort = `
 <div class="inserted">
   <div class="imageContainer">
-    <a href="https://github.com/bpsimusic/HeapSort"></a>
+    <a href="https://github.com/bpsimusic/HeapSort">
     <img src="assets/img/portfolio/heapsort.png" alt="Heapsort" /></a>
   </div>
   <div class="descriptionContainer">

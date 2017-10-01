@@ -1,8 +1,6 @@
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-
-
 body {
   	background-color: #ffffff;
   	font-family: 'Montserrat', sans-serif;
@@ -14,11 +12,56 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
-.col-lg-8 h1{
-  color: #4da6ff;
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #333;
 }
-.col-lg-8 a{
-  color: #4da6ff;
+
+h1 {
+	font-size: 35px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+div.inserted[data-slide="1"] {
+	position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
+  transform: rotateY(0deg);
+}
+
+div.inserted[data-slide="2"] {
+	position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
+  transform: rotateY(-90deg);
+}
+
+div.inserted[data-slide="3"] {
+	position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
+  transform: rotateY(-180deg);
+}
+
+div.inserted[data-slide="4"] {
+	position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
+  transform: rotateY(-270deg);
 }
 
 .project-links {
@@ -34,22 +77,8 @@ body {
   border: none;
 }
 
-/* Titles */
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: #333;
-}
-
-h1 {
-	font-size: 35px;
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
 
 
-
-/* Paragraph & Typographic */
 p {
     line-height: 28px;
     font-size: 25px;
@@ -319,16 +348,12 @@ line-height: 1;
 }
 
 .carousel-inner {
-
   width: 85%;
       margin: auto;
       border-radius: 10px;
       padding-bottom: 20px;
       padding-top: 10px;
       margin-top: 20px;
-}
-
-p {
 }
 
 
@@ -428,21 +453,12 @@ width: 530px;
     bottom: 20px;
 }
 
-
-body {
-  background: #eeeeee;
-}
-
-
-
-
-
-
 .carousel-control.right, .carousel-control.left {
   background-image: none;
 }
 
 body {
+  background: #eeeeee;
   min-width: 1200px;
   min-height: 800px;
 }
@@ -631,27 +647,7 @@ bt {
   width: inherit;
 }
 
-.col-lg-4 {
-  transform: scale(0.9);
-}
-.col-lg-4:hover {
-  transform: scale(1);
-  transition: transform 0.3s;
-  transition-timing-function: ease-out;
-}
-.col-lg-4 img {
-  border: 1px solid #cccccc;
-}
 
-.col-lg-4 img:hover {
-  opacity: 0.5;
-}
-
-
-.col-lg-4 p {
-  margin-bottom: 0px;
-  margin-top: 8px;
-}
 
 .project-desc {
   text-align: start;
@@ -670,16 +666,7 @@ bt {
   position: relative;
 }
 
-.col-lg-4 .project-links {
-  font-size: 16px;
-  padding-top: 5px;
-}
 
-.col-lg-4 .project-title {
-  font-weight: 600;
-  font-size:22px;
-  margin-bottom: 5px;
-}
 
 .contactContainer {
   width: 50%;
@@ -767,6 +754,8 @@ div.modal-body object{
 .workContainer .row {
   display: flex;
 }
+
+/*media screens*/
 
 @media screen and (max-width: 980px) {
   .skillsContainer {
