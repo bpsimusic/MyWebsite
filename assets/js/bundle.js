@@ -75,7 +75,7 @@ $(()=>{
   attachCarouselClickListeners();
   attachClickListeners();
   $('#myCarousel').on('slide.bs.carousel', onSlide);
-  // $("#myCarousel").carousel({interval: 4000});
+  $("#myCarousel").carousel({interval: 4000});
 });
 
 
@@ -115,7 +115,8 @@ $(".nav-item").on("click", function(e){
     $('#myCarousel').on('slide.bs.carousel', onSlide);
     $(".specificDesc").empty();
     $(".specificDesc").html(Projects.RingBuffer);
-    // $("#myCarousel").carousel({interval: 4000});
+    $("#myCarousel").carousel({interval: 4000});
+    // $("#myCarousel").carousel("pause");
   }
 });
 $(".nav-item").on("click", function(e){
@@ -129,7 +130,9 @@ $(".nav-item").on("click", function(e){
     $('#myCarousel').on('slide.bs.carousel', onSlide);
     $(".specificDesc").empty();
     $(".specificDesc").html(Projects.MusicianHub);
-    // $("#myCarousel").carousel({interval: 4000});
+    $("#myCarousel").carousel({interval: 4000});
+    // $("#myCarousel").carousel("pause");
+
   }
 });
 
