@@ -242,7 +242,7 @@ const content1=`<div class="item active">
 </div>
 <div class="item">
   <div class="initial">
-    <a href="https://bpsimusic.github.io/ExploreSF/"><img class="first-carousel-child" src="assets/img/portfolio/exploresf.png" alt="Explore SF" /></a>
+    <a href="https://bpsimusic.github.io/ExploreSF/"><img class="first-carousel-child" src="assets/img/portfolio/ExploreSF.png" alt="Explore SF" /></a>
   </div>
 </div>`;
 
