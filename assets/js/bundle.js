@@ -74,7 +74,8 @@ $(()=>{
   $(".specificDesc").html(Projects.MusicianHub);
   attachCarouselClickListeners();
   attachClickListeners();
-  $('#myCarousel').bind('slide.bs.carousel', onSlide);
+  $('#myCarousel').on('slide.bs.carousel', onSlide);
+  $("#myCarousel").carousel({interval: 4000});
 });
 
 
@@ -111,10 +112,10 @@ $(".nav-item").on("click", function(e){
     $("#projects").append(newCarousel);
     attachCarouselClickListeners();
     attachClickListeners();
-    $('#myCarousel').bind('slide.bs.carousel', onSlide);
+    $('#myCarousel').on('slide.bs.carousel', onSlide);
     $(".specificDesc").empty();
     $(".specificDesc").html(Projects.RingBuffer);
-    $('#myCarousel').carousel("pause");
+    $("#myCarousel").carousel({interval: 4000});
   }
 });
 $(".nav-item").on("click", function(e){
@@ -125,10 +126,10 @@ $(".nav-item").on("click", function(e){
     $("#projects").append(newCarousel);
     attachCarouselClickListeners();
     attachClickListeners();
-    $('#myCarousel').bind('slide.bs.carousel', onSlide);
+    $('#myCarousel').on('slide.bs.carousel', onSlide);
     $(".specificDesc").empty();
     $(".specificDesc").html(Projects.MusicianHub);
-    $('#myCarousel').carousel("pause");
+    $("#myCarousel").carousel({interval: 4000});
   }
 });
 
