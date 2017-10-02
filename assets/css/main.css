@@ -816,7 +816,7 @@ div.modal-body object{
 
 @media screen and (min-width: 1400px){
   #welcome p {
-    font-size: 15px;
+    font-size: 14px;
   }
   #welcome img {
     width: 170px;
@@ -838,11 +838,11 @@ div.modal-body object{
   }
 
   #welcome h1 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   div.contact {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 10px;
   }
 
@@ -860,7 +860,7 @@ div.modal-body object{
   }
 
   .resume {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .project-desc {
