@@ -74,6 +74,25 @@ const StayOnTask = `
       It uses the chrome.storage API to store websites and tasks,
       as well as content-scripts to provide the user interface on each browser tab.</p>
   </div>
+</div>`;
+
+const ExploreSF = `
+<div class="inserted">
+  <div class="imageContainer">
+    <a href="https://bpsimusic.github.io/ExploreSF/">
+      <img src="assets/img/portfolio/ExploreSF.png" alt="ExploreSF"/>    </a>
+  </div>
+  <div class="descriptionContainer">
+    <p class="project-title">Explore SF</p>
+    <div class="project-links">
+      <a href="https://bpsimusic.github.io/ExploreSF/">live</a>
+      <span>  |  </span>
+      <a href="https://github.com/bpsimusic/ExploreSF">github</a>
+    </div>
+    <p class="project-desc">ExploreSF is an app to search for places in San Francisco.
+    It uses the Google Maps API to return a list of locations most closely matching the searched words.
+Simply type in any word related to what you're looking for, and a list of places will appear on the map.</p>
+  </div>
 </div>`
 ;
 
@@ -192,6 +211,7 @@ module.exports =
  Liftables,
  PikachuRacer,
  StayOnTask,
+ ExploreSF,
  QuickSort,
  HeapSort,
  RingBuffer,

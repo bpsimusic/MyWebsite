@@ -3,7 +3,9 @@ const Carousel = require('./carousel');
 
 $(()=>{
   $(".specificDesc").html(Projects.MusicianHub);
+  attachCarouselClickListeners();
   attachClickListeners();
+  $('#myCarousel').bind('slide.bs.carousel', onSlide);
 });
 
 
@@ -81,6 +83,9 @@ function attachClickListeners(){
       case "Stay On Task":
         $(".specificDesc").html(Projects.StayOnTask);
         break;
+      case "Explore SF":
+        $(".specificDesc").html(Projects.ExploreSF);
+        break;
       case "Ring Buffer":
         $(".specificDesc").html(Projects.RingBuffer);
         break;
@@ -115,6 +120,9 @@ function attachCarouselClickListeners(){
     let content = $(".active .first-carousel-child").first();
       switch(content.attr("alt")){
         case "Musician Hub":
+          $(".specificDesc").html(Projects.ExploreSF);
+          break;
+        case "Explore SF":
           $(".specificDesc").html(Projects.MusicianHub);
           break;
         case "Ring Buffer":
@@ -133,6 +141,9 @@ function onSlide(event){
     let firstChild = $(".active .first-carousel-child").first();
       switch(firstChild.attr("alt")){
         case "Musician Hub":
+          $(".specificDesc").html(Projects.ExploreSF);
+          break;
+        case "Explore SF":
           $(".specificDesc").html(Projects.MusicianHub);
           break;
         case "Ring Buffer":
@@ -148,7 +159,7 @@ function onSlide(event){
 
 const content1=`<div class="item active">
   <div class="initial">
-    <a href="#"><img src="assets/img/portfolio/musicianhub.png" alt="Musician Hub" /></a>
+    <a href="#"><img class="first-carousel-child" src="assets/img/portfolio/musicianhub.png" alt="Musician Hub" /></a>
   </div>
   <div class="initial">
     <a href="#"><img  src="assets/img/portfolio/liftables.png" alt="Liftables" /></a>
@@ -158,6 +169,11 @@ const content1=`<div class="item active">
   </div>
   <div class="initial">
     <a href="#"><img src="assets/img/portfolio/StayOnTask.png" alt="Stay On Task" /></a>
+  </div>
+</div>
+<div class="item">
+  <div class="initial">
+    <a href="https://bpsimusic.github.io/ExploreSF/"><img class="first-carousel-child" src="assets/img/portfolio/exploresf.png" alt="Explore SF" /></a>
   </div>
 </div>`;
 

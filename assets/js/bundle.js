@@ -72,7 +72,9 @@ const Carousel = __webpack_require__(2);
 
 $(()=>{
   $(".specificDesc").html(Projects.MusicianHub);
+  attachCarouselClickListeners();
   attachClickListeners();
+  $('#myCarousel').bind('slide.bs.carousel', onSlide);
 });
 
 
@@ -150,6 +152,9 @@ function attachClickListeners(){
       case "Stay On Task":
         $(".specificDesc").html(Projects.StayOnTask);
         break;
+      case "Explore SF":
+        $(".specificDesc").html(Projects.ExploreSF);
+        break;
       case "Ring Buffer":
         $(".specificDesc").html(Projects.RingBuffer);
         break;
@@ -184,6 +189,9 @@ function attachCarouselClickListeners(){
     let content = $(".active .first-carousel-child").first();
       switch(content.attr("alt")){
         case "Musician Hub":
+          $(".specificDesc").html(Projects.ExploreSF);
+          break;
+        case "Explore SF":
           $(".specificDesc").html(Projects.MusicianHub);
           break;
         case "Ring Buffer":
@@ -202,6 +210,9 @@ function onSlide(event){
     let firstChild = $(".active .first-carousel-child").first();
       switch(firstChild.attr("alt")){
         case "Musician Hub":
+          $(".specificDesc").html(Projects.ExploreSF);
+          break;
+        case "Explore SF":
           $(".specificDesc").html(Projects.MusicianHub);
           break;
         case "Ring Buffer":
@@ -217,7 +228,7 @@ function onSlide(event){
 
 const content1=`<div class="item active">
   <div class="initial">
-    <a href="#"><img src="assets/img/portfolio/musicianhub.png" alt="Musician Hub" /></a>
+    <a href="#"><img class="first-carousel-child" src="assets/img/portfolio/musicianhub.png" alt="Musician Hub" /></a>
   </div>
   <div class="initial">
     <a href="#"><img  src="assets/img/portfolio/liftables.png" alt="Liftables" /></a>
@@ -227,6 +238,11 @@ const content1=`<div class="item active">
   </div>
   <div class="initial">
     <a href="#"><img src="assets/img/portfolio/StayOnTask.png" alt="Stay On Task" /></a>
+  </div>
+</div>
+<div class="item">
+  <div class="initial">
+    <a href="https://bpsimusic.github.io/ExploreSF/"><img class="first-carousel-child" src="assets/img/portfolio/exploresf.png" alt="Explore SF" /></a>
   </div>
 </div>`;
 
@@ -333,6 +349,25 @@ const StayOnTask = `
     <p class="project-desc">Stay On Task is a Google Chrome Extension that blocks websites and creates a customized to-do list.
       It uses the chrome.storage API to store websites and tasks,
       as well as content-scripts to provide the user interface on each browser tab.</p>
+  </div>
+</div>`;
+
+const ExploreSF = `
+<div class="inserted">
+  <div class="imageContainer">
+    <a href="https://bpsimusic.github.io/ExploreSF/">
+      <img src="assets/img/portfolio/ExploreSF.png" alt="ExploreSF"/>    </a>
+  </div>
+  <div class="descriptionContainer">
+    <p class="project-title">Explore SF</p>
+    <div class="project-links">
+      <a href="https://bpsimusic.github.io/ExploreSF/">live</a>
+      <span>  |  </span>
+      <a href="https://github.com/bpsimusic/ExploreSF">github</a>
+    </div>
+    <p class="project-desc">ExploreSF is an app to search for places in San Francisco.
+    It uses the Google Maps API to return a list of locations most closely matching the searched words.
+Simply type in any word related to what you're looking for, and a list of places will appear on the map.</p>
   </div>
 </div>`
 ;
@@ -452,6 +487,7 @@ module.exports =
  Liftables,
  PikachuRacer,
  StayOnTask,
+ ExploreSF,
  QuickSort,
  HeapSort,
  RingBuffer,
